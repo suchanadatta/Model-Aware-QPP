@@ -186,8 +186,8 @@ public class TRECQueryParse extends DefaultHandler {
 
         try {
 
-            EnglishAnalyzerWithSmartStopword obj;
-            obj = new EnglishAnalyzerWithSmartStopword("/home/suchana/NetBeansProjects/rm3idf-master/src/resources/smart-stopwords");
+            EnglishAnalyzerSmartStopWords obj;
+            obj = new EnglishAnalyzerSmartStopWords("/home/suchana/NetBeansProjects/rm3idf-master/src/resources/smart-stopwords");
             Analyzer analyzer = obj.setAndGetEnglishAnalyzerWithSmartStopword();
             
             TRECQueryParse queryParser = new TRECQueryParse(args[0], analyzer);

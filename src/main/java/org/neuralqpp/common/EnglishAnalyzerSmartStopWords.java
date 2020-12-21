@@ -156,7 +156,7 @@ public class EnglishAnalyzerSmartStopWords {
      */
     public static void main(String[] args) {
 
-        EnglishAnalyzerWithSmartStopword obj = new EnglishAnalyzerWithSmartStopword();
+        EnglishAnalyzerSmartStopWords obj = new EnglishAnalyzerSmartStopWords();
         obj.setEnglishAnalyzerWithSmartStopword();
     }
 }

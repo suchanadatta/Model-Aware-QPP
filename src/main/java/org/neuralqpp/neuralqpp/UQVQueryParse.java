@@ -7,7 +7,7 @@
 package org.neuralqpp.neuralqpp;
 
 import static org.neuralqpp.common.CommonVariables.FIELD_BOW;
-import org.neuralqpp.common.EnglishAnalyzerWithSmartStopword;
+import org.neuralqpp.common.EnglishAnalyzerSmartStopWords;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -109,8 +109,8 @@ public class UQVQueryParse {
 //        String path = "/home/suchana/NetBeansProjects/NeuralModelQpp/query_variant.txt";
 
         try {
-            EnglishAnalyzerWithSmartStopword obj;
-            obj = new EnglishAnalyzerWithSmartStopword("/home/suchana/smart-stopwords");
+            EnglishAnalyzerSmartStopWords obj;
+            obj = new EnglishAnalyzerSmartStopWords("/home/suchana/smart-stopwords");
             Analyzer analyzer = obj.setAndGetEnglishAnalyzerWithSmartStopword();
             
             UQVQueryParse variantParser = new UQVQueryParse(args[0], analyzer);
